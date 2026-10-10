@@ -53,7 +53,18 @@ const albumViewer = document.querySelector('#albumViewer');
 const albumMainPhoto = document.querySelector('#albumMainPhoto');
 const albumMainNumber = document.querySelector('#albumMainNumber');
 const albumSlots = [...document.querySelectorAll('[data-album-index]')];
-const albumImages = Array(10).fill(null);
+const albumImages = [
+  'assets/album/album-01.png',
+  'assets/album/album-02.png',
+  'assets/album/album-03.png',
+  'assets/album/album-04.png',
+  'assets/album/album-05.png',
+  'assets/album/album-06.png',
+  'assets/album/album-07.png',
+  'assets/album/album-08.png',
+  'assets/album/album-09.png',
+  'assets/album/album-10.png',
+];
 let activeAlbumIndex = 0;
 
 function renderAlbum() {
