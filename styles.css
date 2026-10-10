@@ -142,6 +142,9 @@ h1 small { display: inline-block; color: var(--ink); font-family: var(--display)
 .memory-row-reverse .memory-thought { order: 1; }
 .memory-photo { position: relative; min-height: 296px; border-radius: 13px; overflow: hidden; }
 .memory-photo.photo-placeholder { color: rgba(54,43,56,.74); }
+.memory-photo-fixed { background-size: cover; background-position: center; }
+.memory-photo-fixed::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(25,18,24,.08), rgba(25,18,24,.52)); }
+.memory-photo-fixed .placeholder-number, .memory-photo-fixed .placeholder-icon, .memory-photo-fixed .placeholder-copy { z-index: 2; color: white; }
 .memory-photo .placeholder-copy strong { font-size: 30px; }
 .memory-thought { border: 1px solid var(--line); border-radius: 13px; padding: 37px 38px 30px; display: flex; flex-direction: column; justify-content: center; background: rgba(255,255,255,.25); position: relative; }
 .memory-thought::after { content: "♡"; position: absolute; right: 24px; top: 19px; color: var(--coral); font-size: 24px; opacity: .8; }
